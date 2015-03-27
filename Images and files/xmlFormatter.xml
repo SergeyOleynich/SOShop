@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+    <count>
+        <category>7</category>
+        <subCategory>25</subCategory>
+    </count>
+    <category>
+        <CategoryName>Фрукты и овощи</CategoryName>
+        <image>http://i.tavriav.ua/offers/0/182.png</image>
+        <data>
+            <SubCategoryName>Фрукты</SubCategoryName>
+            <data>
+                <title>Яблоки</title>
+                <barCode>482</barCode>
+                <descriptionRus>Яблоки это чудные фрукты</descriptionRus>
+                <descriptionEng>You should eat one apple every day</descriptionEng>
+                <dimension>кг</dimension>
+                <image>http://allforchildren.ru/why/illustr/what36-1.jpg</image>
+                <sale>5</sale>
+                <cost>29.31</cost>
+            </data>
+            <data>
+                <title>Черешня</title>
+                <barCode>482</barCode>
+                <descriptionRus>Черешня это чудные фрукты</descriptionRus>
+                <descriptionEng>You should eat one cherry every day</descriptionEng>
+                <dimension>кг</dimension>
+                <image>https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTJVfEDAPBxaPAYMIy7KEz2qWUOa6HbaMNQpWIZiYSSWRpfCcjbH6kmx55syg</image>
+                <sale>5</sale>
+                <cost>24.26</cost>
+            </data>
+            <data>
+                <title>Банан</title>
+                <barCode>529</barCode>
+                <descriptionRus>Банан это чудные фрукты</descriptionRus>
+                <descriptionEng>You should eat one cherry every day</descriptionEng>
+                <dimension>кг</dimension>
+                <image>http://direct-press.ru/images/stories/2015/Health/02-2015/06/174-Banan.jpg</image>
+                <sale>5</sale>
+                <cost>48.26</cost>
+            </data>
+        </data>
+    </category>
+</data>
