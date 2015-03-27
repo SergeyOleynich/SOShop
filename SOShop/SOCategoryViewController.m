@@ -20,8 +20,6 @@
 @property (strong, nonatomic) SOStoreManager *store;
 @property (strong, nonatomic) NSArray *allCategory;
 @property (strong, nonatomic) NSString *nextView;
-@property (strong, nonatomic) dispatch_group_t myDispatchGroup;
-@property (strong, nonatomic) NSMutableDictionary *cache;
 
 @property (strong, nonatomic) NSFileManager *manager;
 
@@ -31,12 +29,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    self.myDispatchGroup = dispatch_group_create();
-    
+        
     _manager = [NSFileManager defaultManager];
     
-    _cache = [[NSMutableDictionary alloc] init];
     _store = [SOStoreManager sharedManager];
     
     _allCategory = [self.store getCategories];
@@ -117,14 +112,6 @@
     cell.textLabel.text = category.categoryName;
     cell.imageView.image = nil;
     __weak UITableViewCell *weakCell = cell;
-    
-    /*
-    dispatch_group_async(self.myDispatchGroup, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
-        NSData *tempData = [NSData dataWithContentsOfURL:category.urlToImage];
-        //sleep(1);
-        weakCell.imageView.image = [UIImage imageWithData:tempData];
-    });
-    */
     
     NSString *key = [category.urlToImage relativePath];
     
