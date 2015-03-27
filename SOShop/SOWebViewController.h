@@ -10,4 +10,9 @@
 
 @interface SOWebViewController : UIViewController
 
+@property (strong, nonatomic) NSString *mainTitle;
+
+@property (strong, nonatomic) NSURL *url;
+@property (strong, nonatomic) NSData *data;
+
 @end

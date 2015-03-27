@@ -1,4 +1,47 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6252" systemVersion="14C94b" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6751" systemVersion="14C94b" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="SOBasket" syncable="YES">
+        <attribute name="creationDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="basketProducts" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="SOBasketProduct" inverseName="basket" inverseEntity="SOBasketProduct" syncable="YES"/>
+        <relationship name="history" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="SOHistory" inverseName="baskets" inverseEntity="SOHistory" syncable="YES"/>
+    </entity>
+    <entity name="SOBasketProduct" syncable="YES">
+        <attribute name="amount" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="basket" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SOBasket" inverseName="basketProducts" inverseEntity="SOBasket" syncable="YES"/>
+        <relationship name="product" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SOProduct" inverseName="basketProduct" inverseEntity="SOProduct" syncable="YES"/>
+    </entity>
+    <entity name="SOCategory" syncable="YES">
+        <attribute name="categoryTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="subCategories" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="SOSubCategory" inverseName="category" inverseEntity="SOSubCategory" syncable="YES"/>
+    </entity>
+    <entity name="SOHistory" syncable="YES">
+        <relationship name="baskets" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="SOBasket" inverseName="history" inverseEntity="SOBasket" syncable="YES"/>
+    </entity>
+    <entity name="SOProduct" syncable="YES">
+        <attribute name="barCode" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="cost" optional="YES" attributeType="Double" defaultValueString="0" syncable="YES"/>
+        <attribute name="productDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productDimension" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="productImage" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="productImageURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productOfTheDay" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="productSale" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="productTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="basketProduct" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SOBasketProduct" inverseName="product" inverseEntity="SOBasketProduct" syncable="YES"/>
+        <relationship name="subCategory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SOSubCategory" inverseName="products" inverseEntity="SOSubCategory" syncable="YES"/>
+    </entity>
+    <entity name="SOSubCategory" syncable="YES">
+        <attribute name="subCategoryTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SOCategory" inverseName="subCategories" inverseEntity="SOCategory" syncable="YES"/>
+        <relationship name="products" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="SOProduct" inverseName="subCategory" inverseEntity="SOProduct" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="SOBasket" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="SOBasketProduct" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="SOCategory" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="SOHistory" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="SOProduct" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="SOSubCategory" positionX="0" positionY="0" width="0" height="0"/>
+    </elements>
 </model>

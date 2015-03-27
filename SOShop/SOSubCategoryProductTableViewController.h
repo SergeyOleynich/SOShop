@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SOCategoryProductTableViewController : UITableViewController
+@interface SOSubCategoryProductTableViewController : UITableViewController
+
+@property (strong, nonatomic) NSString *mainTitle;
+@property (strong, nonatomic) NSArray *tableData;
 
 @end

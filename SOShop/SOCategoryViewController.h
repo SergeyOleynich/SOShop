@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SOStoreViewController : UIViewController
+@interface SOCategoryViewController : UIViewController
 
 @end

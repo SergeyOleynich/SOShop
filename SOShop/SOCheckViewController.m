@@ -10,12 +10,17 @@
 
 @interface SOCheckViewController ()
 
+@property (weak, nonatomic) IBOutlet UITextView *checkTextView;
+
 @end
 
 @implementation SOCheckViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.checkTextView.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    
     // Do any additional setup after loading the view.
 }
 

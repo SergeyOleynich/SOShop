@@ -6,22 +6,61 @@
 //  Copyright (c) 2015 Sergey. All rights reserved.
 //
 
-#import "SOCategoryProductTableViewController.h"
+#import "SOSubCategoryProductTableViewController.h"
+#import "SOStoreManager.h"
+#import "SOProductTableViewController.h"
+#import "SOSubCategory.h"
+@interface SOSubCategoryProductTableViewController ()
 
-@interface SOCategoryProductTableViewController ()
+//@property (strong, nonatomic) NSArray *tableData;
+@property (strong, nonatomic) SOStoreManager *store;
 
 @end
 
-@implementation SOCategoryProductTableViewController
+@implementation SOSubCategoryProductTableViewController
+
+#pragma mark - DEALLOC
+
+-(void)dealloc {
+    NSLog(@"SOSubCategoryProductTableViewController deallocated");
+}
+
+#pragma mark - Setters
+
+-(void)setMainTitle:(NSString *)mainTitle {
+    
+    _mainTitle = mainTitle;
+    
+    [self.navigationItem setTitle:mainTitle];
+
+    /*
+    [self.navigationItem setTitle:NSLocalizedString(mainTitle, nil)];
+    
+    _tableData = [self.store getAllSubCategoryNamesByCategoryName:self.mainTitle];
+    
+    [self.tableView reloadData];
+     */
+}
+
+-(void)setTableData:(NSArray *)tableData {
+    //_tableData = tableData;
+    NSSortDescriptor *sort = [NSSortDescriptor sortDescriptorWithKey:@"subCategoryName" ascending:YES selector:@selector(caseInsensitiveCompare:)];
+    _tableData = [tableData sortedArrayUsingDescriptors:@[sort]];
+    
+    [self.tableView reloadData];
+    
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    _store = [SOStoreManager sharedManager];
+    self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
+    /*
+    if (!self.tableData) {
+#warning необходимо инициализировать стандартным путем
+        _tableData = [self.store getAllSubCategoryNamesByCategoryName:self.mainTitle];
+    }*/
 }
 
 - (void)didReceiveMemoryWarning {
@@ -29,63 +68,58 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
-}
+#pragma mark - UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+    return [self.tableData count];
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
-    // Configure the cell...
+    static NSString *identifier = @"Cell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
+    
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+    }
+    
+    cell.textLabel.text = [(SOSubCategory *)[self.tableData objectAtIndex:indexPath.row] subCategoryName];
+    
+    //cell.textLabel.text = NSLocalizedString([self.tableData objectAtIndex:indexPath.row], nil);
     
     return cell;
 }
-*/
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
+#pragma mark - UITableViewDelegate
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 60.f;
 }
-*/
 
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    SOSubCategory *subcategory = [self.tableData objectAtIndex:indexPath.row];
+    
+    SOProductTableViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"SOProductViewController"];
+    
+    vc.mainTitle = subcategory.subCategoryName;
+    vc.tableData = subcategory.products;
+    
+    [self.navigationController pushViewController:vc animated:YES];
+    /*
+    SOProductViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"SOProductViewController"];
+    
+    NSLog(@"%@", self.tableData);
+    
+    vc.categoryAndSubcategoryName = [NSDictionary dictionaryWithObjectsAndKeys:[self.tableData objectAtIndex:indexPath.row], @"subCategory", self.mainTitle, @"category", nil];
+    
+    [self.navigationController pushViewController:vc animated:YES];
+    */
 }
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
 
 /*
 #pragma mark - Navigation

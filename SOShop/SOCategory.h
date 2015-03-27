@@ -8,6 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
-@interface SOCategory : NSObject
+@interface SOCategory : NSObject <NSCoding, NSCopying>
+
+- (instancetype) init __attribute__((unavailable("init not available, call initWithCategoryName instead")));
++ (instancetype) new __attribute__((unavailable("init not available, call initWithCategoryName instead")));
+
+@property (strong, nonatomic, readonly) NSString *categoryName;
+@property (strong, nonatomic) NSMutableArray *subCategories;
+@property (strong, nonatomic) NSURL *urlToImage;
+//@property (strong, nonatomic) NSMutableArray *subCategoty;
+
+- (instancetype)initWithCategoryName:(NSDictionary *)dictionary;
 
 @end

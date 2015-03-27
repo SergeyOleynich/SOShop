@@ -14,6 +14,14 @@
 
 @implementation SODetailProductViewController
 
+-(void)setMainTitle:(NSString *)mainTitle {
+    
+    _mainTitle = mainTitle;
+    
+    [self.navigationItem setTitle:NSLocalizedString(mainTitle, nil)];
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -22,6 +30,11 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)dealloc {
+    _mainTitle = nil;
+    NSLog(@"DEALLOC DETAIL");
 }
 
 /*

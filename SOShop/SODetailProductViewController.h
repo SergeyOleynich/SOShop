@@ -10,4 +10,6 @@
 
 @interface SODetailProductViewController : UIViewController
 
+@property (strong, nonatomic) NSString *mainTitle;
+
 @end

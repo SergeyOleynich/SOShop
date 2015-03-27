@@ -1,0 +1,101 @@
+/* 
+  Localizable.strings
+  SOShop
+
+  Created by Sergey on 21.02.15.
+  Copyright (c) 2015 Sergey. All rights reserved.
+*/
+
+"Close" = "Закрыть";
+
+//UITabbarcontroller
+
+"MainTabShop" = "Магазин";
+"MainTabBasket" = "Корзина";
+"MainTabOptions" = "Опции и настройки";
+
+//UINavigationControler
+
+"BackToShop" = "В магазин";
+
+//SOWebViewController
+
+"Link" = "Интернет ссылка";
+"File" = "Ваш файл";
+"Loading" = "Ша, идет загрузка...";
+
+//SOProductCell
+
+"SaleProductLabel" = "более";
+"DeleteButton" = "Удалить продукт\nиз корзины";
+"AddButton" = "Добавить продукт в корзину";
+"AmountBuyButton" = "Выберите количество";
+
+//Category
+
+"CategoryallProductsCatalog" = " Весь товар";
+"CategoryFruitsVegetables" = "Фрукты и овощи";
+"CategoryMeatFishBird" = "Мясо, рыба и птица";
+"CategoryConfectionery" = "Кондитерские изделия";
+"CategoryMilkCheeseEggs" = "Молоко, сыры, яйца";
+"CategoryGrocery" = "Бакалея";
+"CategoryDrinks" = "Напитки";
+"CategoryTobaccoProducts" = "Табачные изделия";
+
+//SubCategory
+
+"SubCategoryFruit" = "Фрукты";
+"SubCategoryVegetables" = "Овощи";
+"SubCategoryMushrooms" = "Грибы";
+"SubCategoryNuts" = "Орехи";
+"SubCategorySalad" = "Зелень";
+"SubCategoryDriedFruts" = "Сухофрукты";
+
+"SubCategoryBeef" = "Говядина";
+"SubCategoryPork" = "Свинина";
+"SubCategoryLamb" = "Баранина";
+"SubCategoryShrimp" = "Креветки";
+"SubCategoryFish" = "Рыба";
+"SubCategoryChicken" = "Курица";
+
+"SubCategoryCandy" = "Конфеты";
+"SubCategoryChocolate" = "Шоколад";
+"SubCategoryCookies" = "Печенье";
+"SubCategoryCakes" = "Торты";
+"SubCategoryCud" = "Жвачка";
+
+"SubCategoryMilk" = "Молоко";
+"SubCategoryCheese" = "Сыр";
+"SubCategoryEggs" = "Яйца";
+
+"SubCategoryCereals" = "Крупа";
+"SubCategoryFlour" = "Мука";
+"SubCategoryPasta" = "Макароны";
+
+"SubCategoryWater" = "Вода";
+"SubCategoryJuice" = "Соки";
+"SubCategoryStrongDrinks" = "Крепкие спиртные напитки";
+"SubCategoryLowAlcholDrinks" = "Слабоалкогольные напитки";
+"SubCategoryWine" = "Вина";
+
+"SubCategoryCigarettes" = "Сигареты";
+"SubCategoryCigars" = "Сигары";
+
+//Dimension
+
+"kg" = "кг";
+"one" = "шт";
+"liter" = "литер";
+
+//Products
+
+"Apple" = "Яблоко";
+"Cherry" = "Черешня";
+"Banana" = "Банан";
+
+
+
+
+
+
+

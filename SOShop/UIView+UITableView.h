@@ -10,4 +10,6 @@
 
 @interface UIView (UITableView)
 
+- (UITableViewCell *)superCell;
+
 @end

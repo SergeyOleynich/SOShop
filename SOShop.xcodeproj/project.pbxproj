@@ -7,13 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC35ED5A1A9898A5004D20C8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CC35ED5C1A9898A5004D20C8 /* Localizable.strings */; };
+		CC35ED601A989C7D004D20C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC35ED5F1A989C7D004D20C8 /* Foundation.framework */; };
+		CC35ED621A989C84004D20C8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC35ED611A989C84004D20C8 /* UIKit.framework */; };
+		CC35ED6A1A98BE09004D20C8 /* SOProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = CC35ED691A98BE09004D20C8 /* SOProduct.m */; };
+		CC35ED6D1A98BE75004D20C8 /* SOStoreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC35ED6C1A98BE75004D20C8 /* SOStoreManager.m */; };
+		CC35ED711A98E1BD004D20C8 /* SOCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CC35ED701A98E1BD004D20C8 /* SOCategory.m */; };
+		CC35ED741A98E1D0004D20C8 /* SOSubCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CC35ED731A98E1D0004D20C8 /* SOSubCategory.m */; };
+		CC35ED7A1A993F36004D20C8 /* SODetailProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC35ED791A993F36004D20C8 /* SODetailProductViewController.m */; };
+		CC35ED7E1A99C7DA004D20C8 /* SOProductTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CC35ED7D1A99C7DA004D20C8 /* SOProductTableViewCell.m */; };
 		CC5175311A97AE0D00056A3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5175301A97AE0D00056A3A /* main.m */; };
 		CC5175341A97AE0D00056A3A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5175331A97AE0D00056A3A /* AppDelegate.m */; };
-		CC5175371A97AE0E00056A3A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5175361A97AE0E00056A3A /* ViewController.m */; };
-		CC51753A1A97AE0E00056A3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC5175381A97AE0E00056A3A /* Main.storyboard */; };
+		CC51753A1A97AE0E00056A3A /* SOShop.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC5175381A97AE0E00056A3A /* SOShop.storyboard */; };
 		CC51753C1A97AE0E00056A3A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC51753B1A97AE0E00056A3A /* Images.xcassets */; };
 		CC51753F1A97AE0E00056A3A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC51753D1A97AE0E00056A3A /* LaunchScreen.xib */; };
 		CC51754B1A97AE0E00056A3A /* SOShopTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC51754A1A97AE0E00056A3A /* SOShopTests.m */; };
+		CC5175881A97B78C00056A3A /* SOMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5175871A97B78C00056A3A /* SOMainTabBarController.m */; };
+		CC51758B1A97B7E900056A3A /* SOCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC51758A1A97B7E900056A3A /* SOCategoryViewController.m */; };
+		CC51758E1A97B82700056A3A /* SOSubCategoryProductTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC51758D1A97B82700056A3A /* SOSubCategoryProductTableViewController.m */; };
+		CC5175911A97B89E00056A3A /* SOProductTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5175901A97B89E00056A3A /* SOProductTableViewController.m */; };
+		CC5175941A97BA1000056A3A /* SOBasketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5175931A97BA1000056A3A /* SOBasketViewController.m */; };
+		CC5175971A97BA4300056A3A /* SOCheckViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5175961A97BA4300056A3A /* SOCheckViewController.m */; };
+		CC6029491AA4712B001A280E /* tesla.png in Resources */ = {isa = PBXBuildFile; fileRef = CC6029461AA4712B001A280E /* tesla.png */; };
+		CC60294F1AA4757C001A280E /* Plakat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CC60294D1AA4757C001A280E /* Plakat.jpg */; };
+		CC6061CB1ABF494D00644A83 /* SOBasketProductTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6061CA1ABF494D00644A83 /* SOBasketProductTableViewCell.m */; };
+		CCA14F531AC15E300068C72B /* XMLDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA14F521AC15E300068C72B /* XMLDictionary.m */; };
+		CCA14F551AC15EE40068C72B /* xmlFormatter.xml in Resources */ = {isa = PBXBuildFile; fileRef = CCA14F541AC15EE40068C72B /* xmlFormatter.xml */; };
+		CCB284471AA6EBC700125EEC /* SOStore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CCB284451AA6EBC700125EEC /* SOStore.xcdatamodeld */; };
+		CCB2844B1AA77A3D00125EEC /* document.json in Resources */ = {isa = PBXBuildFile; fileRef = CCB2844A1AA77A3D00125EEC /* document.json */; };
+		CCB6D4181A99F78B00892649 /* SOBasketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB6D4171A99F78B00892649 /* SOBasketManager.m */; };
+		CCB6D41F1A99FD1B00892649 /* UIView+UITableView.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB6D41E1A99FD1B00892649 /* UIView+UITableView.m */; };
+		CCB6D4261A9A26DC00892649 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCB6D4251A9A26DC00892649 /* QuartzCore.framework */; };
+		CCEE4BE21AA3768700A107A2 /* SOSettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCEE4BE11AA3768700A107A2 /* SOSettingsTableViewController.m */; };
+		CCEE4BE51AA37A7000A107A2 /* SOWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCEE4BE41AA37A7000A107A2 /* SOWebViewController.m */; };
+		CCEE4BE81AA37AA000A107A2 /* SOPopularProductTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCEE4BE71AA37AA000A107A2 /* SOPopularProductTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +54,66 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC35ED5B1A9898A5004D20C8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CC35ED5D1A9898BA004D20C8 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CC35ED5E1A989C44004D20C8 /* Constans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constans.h; sourceTree = "<group>"; };
+		CC35ED5F1A989C7D004D20C8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CC35ED611A989C84004D20C8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CC35ED681A98BE09004D20C8 /* SOProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOProduct.h; sourceTree = "<group>"; };
+		CC35ED691A98BE09004D20C8 /* SOProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOProduct.m; sourceTree = "<group>"; };
+		CC35ED6B1A98BE75004D20C8 /* SOStoreManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOStoreManager.h; sourceTree = "<group>"; };
+		CC35ED6C1A98BE75004D20C8 /* SOStoreManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOStoreManager.m; sourceTree = "<group>"; };
+		CC35ED6F1A98E1BD004D20C8 /* SOCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOCategory.h; sourceTree = "<group>"; };
+		CC35ED701A98E1BD004D20C8 /* SOCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOCategory.m; sourceTree = "<group>"; };
+		CC35ED721A98E1D0004D20C8 /* SOSubCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOSubCategory.h; sourceTree = "<group>"; };
+		CC35ED731A98E1D0004D20C8 /* SOSubCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOSubCategory.m; sourceTree = "<group>"; };
+		CC35ED781A993F36004D20C8 /* SODetailProductViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SODetailProductViewController.h; sourceTree = "<group>"; };
+		CC35ED791A993F36004D20C8 /* SODetailProductViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SODetailProductViewController.m; sourceTree = "<group>"; };
+		CC35ED7C1A99C7DA004D20C8 /* SOProductTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOProductTableViewCell.h; sourceTree = "<group>"; };
+		CC35ED7D1A99C7DA004D20C8 /* SOProductTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOProductTableViewCell.m; sourceTree = "<group>"; };
 		CC51752B1A97AE0D00056A3A /* SOShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SOShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC51752F1A97AE0D00056A3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC5175301A97AE0D00056A3A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CC5175321A97AE0D00056A3A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CC5175331A97AE0D00056A3A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CC5175351A97AE0E00056A3A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CC5175361A97AE0E00056A3A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		CC5175391A97AE0E00056A3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CC5175391A97AE0E00056A3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SOShop.storyboard; sourceTree = "<group>"; };
 		CC51753B1A97AE0E00056A3A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CC51753E1A97AE0E00056A3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		CC5175441A97AE0E00056A3A /* SOShopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SOShopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC5175491A97AE0E00056A3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC51754A1A97AE0E00056A3A /* SOShopTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SOShopTests.m; sourceTree = "<group>"; };
+		CC5175861A97B78C00056A3A /* SOMainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOMainTabBarController.h; sourceTree = "<group>"; };
+		CC5175871A97B78C00056A3A /* SOMainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOMainTabBarController.m; sourceTree = "<group>"; };
+		CC5175891A97B7E900056A3A /* SOCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOCategoryViewController.h; sourceTree = "<group>"; };
+		CC51758A1A97B7E900056A3A /* SOCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOCategoryViewController.m; sourceTree = "<group>"; };
+		CC51758C1A97B82700056A3A /* SOSubCategoryProductTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOSubCategoryProductTableViewController.h; sourceTree = "<group>"; };
+		CC51758D1A97B82700056A3A /* SOSubCategoryProductTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOSubCategoryProductTableViewController.m; sourceTree = "<group>"; };
+		CC51758F1A97B89E00056A3A /* SOProductTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOProductTableViewController.h; sourceTree = "<group>"; };
+		CC5175901A97B89E00056A3A /* SOProductTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOProductTableViewController.m; sourceTree = "<group>"; };
+		CC5175921A97BA1000056A3A /* SOBasketViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOBasketViewController.h; sourceTree = "<group>"; };
+		CC5175931A97BA1000056A3A /* SOBasketViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOBasketViewController.m; sourceTree = "<group>"; };
+		CC5175951A97BA4300056A3A /* SOCheckViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOCheckViewController.h; sourceTree = "<group>"; };
+		CC5175961A97BA4300056A3A /* SOCheckViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOCheckViewController.m; sourceTree = "<group>"; };
+		CC6029461AA4712B001A280E /* tesla.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tesla.png; sourceTree = "<group>"; };
+		CC60294D1AA4757C001A280E /* Plakat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Plakat.jpg; sourceTree = "<group>"; };
+		CC6061C91ABF494C00644A83 /* SOBasketProductTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOBasketProductTableViewCell.h; sourceTree = "<group>"; };
+		CC6061CA1ABF494D00644A83 /* SOBasketProductTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOBasketProductTableViewCell.m; sourceTree = "<group>"; };
+		CCA14F511AC15E300068C72B /* XMLDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLDictionary.h; sourceTree = SOURCE_ROOT; };
+		CCA14F521AC15E300068C72B /* XMLDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLDictionary.m; sourceTree = SOURCE_ROOT; };
+		CCA14F541AC15EE40068C72B /* xmlFormatter.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = xmlFormatter.xml; sourceTree = "<group>"; };
+		CCB284461AA6EBC700125EEC /* SOStore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SOStore.xcdatamodel; sourceTree = "<group>"; };
+		CCB2844A1AA77A3D00125EEC /* document.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = document.json; sourceTree = "<group>"; };
+		CCB6D4161A99F78B00892649 /* SOBasketManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOBasketManager.h; sourceTree = "<group>"; };
+		CCB6D4171A99F78B00892649 /* SOBasketManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOBasketManager.m; sourceTree = "<group>"; };
+		CCB6D41D1A99FD1B00892649 /* UIView+UITableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+UITableView.h"; sourceTree = "<group>"; };
+		CCB6D41E1A99FD1B00892649 /* UIView+UITableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+UITableView.m"; sourceTree = "<group>"; };
+		CCB6D4251A9A26DC00892649 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		CCEE4BE01AA3768700A107A2 /* SOSettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOSettingsTableViewController.h; sourceTree = "<group>"; };
+		CCEE4BE11AA3768700A107A2 /* SOSettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOSettingsTableViewController.m; sourceTree = "<group>"; };
+		CCEE4BE31AA37A7000A107A2 /* SOWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOWebViewController.h; sourceTree = "<group>"; };
+		CCEE4BE41AA37A7000A107A2 /* SOWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOWebViewController.m; sourceTree = "<group>"; };
+		CCEE4BE61AA37AA000A107A2 /* SOPopularProductTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOPopularProductTableViewController.h; sourceTree = "<group>"; };
+		CCEE4BE71AA37AA000A107A2 /* SOPopularProductTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOPopularProductTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +121,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCB6D4261A9A26DC00892649 /* QuartzCore.framework in Frameworks */,
+				CC35ED621A989C84004D20C8 /* UIKit.framework in Frameworks */,
+				CC35ED601A989C7D004D20C8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,9 +137,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC35ED661A98BDE2004D20C8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CC5175861A97B78C00056A3A /* SOMainTabBarController.h */,
+				CC5175871A97B78C00056A3A /* SOMainTabBarController.m */,
+				CCEE4BEB1AA37ADD00A107A2 /* SOSettingItem */,
+				CCEE4BEA1AA37AD000A107A2 /* SOBasketItem */,
+				CCEE4BE91AA37AC200A107A2 /* SOStoreItem */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		CC35ED671A98BDEE004D20C8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CCB6D4151A99F76500892649 /* Basket */,
+				CCB6D4141A99F75900892649 /* Store */,
+				CCB284451AA6EBC700125EEC /* SOStore.xcdatamodeld */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CC35ED7B1A99C7A4004D20C8 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CC35ED7C1A99C7DA004D20C8 /* SOProductTableViewCell.h */,
+				CC35ED7D1A99C7DA004D20C8 /* SOProductTableViewCell.m */,
+				CC6061C91ABF494C00644A83 /* SOBasketProductTableViewCell.h */,
+				CC6061CA1ABF494D00644A83 /* SOBasketProductTableViewCell.m */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
 		CC5175221A97AE0D00056A3A = {
 			isa = PBXGroup;
 			children = (
+				CCB6D4251A9A26DC00892649 /* QuartzCore.framework */,
+				CC35ED611A989C84004D20C8 /* UIKit.framework */,
+				CC35ED5F1A989C7D004D20C8 /* Foundation.framework */,
 				CC51752D1A97AE0D00056A3A /* SOShop */,
 				CC5175471A97AE0E00056A3A /* SOShopTests */,
 				CC51752C1A97AE0D00056A3A /* Products */,
@@ -81,13 +194,17 @@
 		CC51752D1A97AE0D00056A3A /* SOShop */ = {
 			isa = PBXGroup;
 			children = (
+				CCA14F501AC15E1D0068C72B /* libs */,
+				CCB6D4191A99FC4000892649 /* Category */,
+				CC35ED7B1A99C7A4004D20C8 /* Cell */,
+				CC35ED671A98BDEE004D20C8 /* Model */,
+				CC35ED661A98BDE2004D20C8 /* View */,
 				CC5175321A97AE0D00056A3A /* AppDelegate.h */,
 				CC5175331A97AE0D00056A3A /* AppDelegate.m */,
-				CC5175351A97AE0E00056A3A /* ViewController.h */,
-				CC5175361A97AE0E00056A3A /* ViewController.m */,
-				CC5175381A97AE0E00056A3A /* Main.storyboard */,
+				CC5175381A97AE0E00056A3A /* SOShop.storyboard */,
 				CC51753B1A97AE0E00056A3A /* Images.xcassets */,
 				CC51753D1A97AE0E00056A3A /* LaunchScreen.xib */,
+				CC6029451AA4712B001A280E /* Images and files */,
 				CC51752E1A97AE0D00056A3A /* Supporting Files */,
 			);
 			path = SOShop;
@@ -96,6 +213,8 @@
 		CC51752E1A97AE0D00056A3A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CC35ED5E1A989C44004D20C8 /* Constans.h */,
+				CC35ED5C1A9898A5004D20C8 /* Localizable.strings */,
 				CC51752F1A97AE0D00056A3A /* Info.plist */,
 				CC5175301A97AE0D00056A3A /* main.m */,
 			);
@@ -117,6 +236,98 @@
 				CC5175491A97AE0E00056A3A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CC6029451AA4712B001A280E /* Images and files */ = {
+			isa = PBXGroup;
+			children = (
+				CCA14F541AC15EE40068C72B /* xmlFormatter.xml */,
+				CCB2844A1AA77A3D00125EEC /* document.json */,
+				CC60294D1AA4757C001A280E /* Plakat.jpg */,
+				CC6029461AA4712B001A280E /* tesla.png */,
+			);
+			path = "Images and files";
+			sourceTree = SOURCE_ROOT;
+		};
+		CCA14F501AC15E1D0068C72B /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				CCA14F511AC15E300068C72B /* XMLDictionary.h */,
+				CCA14F521AC15E300068C72B /* XMLDictionary.m */,
+			);
+			name = libs;
+			sourceTree = "<group>";
+		};
+		CCB6D4141A99F75900892649 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				CC35ED6B1A98BE75004D20C8 /* SOStoreManager.h */,
+				CC35ED6C1A98BE75004D20C8 /* SOStoreManager.m */,
+				CC35ED6F1A98E1BD004D20C8 /* SOCategory.h */,
+				CC35ED701A98E1BD004D20C8 /* SOCategory.m */,
+				CC35ED721A98E1D0004D20C8 /* SOSubCategory.h */,
+				CC35ED731A98E1D0004D20C8 /* SOSubCategory.m */,
+				CC35ED681A98BE09004D20C8 /* SOProduct.h */,
+				CC35ED691A98BE09004D20C8 /* SOProduct.m */,
+			);
+			name = Store;
+			sourceTree = "<group>";
+		};
+		CCB6D4151A99F76500892649 /* Basket */ = {
+			isa = PBXGroup;
+			children = (
+				CCB6D4161A99F78B00892649 /* SOBasketManager.h */,
+				CCB6D4171A99F78B00892649 /* SOBasketManager.m */,
+			);
+			name = Basket;
+			sourceTree = "<group>";
+		};
+		CCB6D4191A99FC4000892649 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				CCB6D41D1A99FD1B00892649 /* UIView+UITableView.h */,
+				CCB6D41E1A99FD1B00892649 /* UIView+UITableView.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		CCEE4BE91AA37AC200A107A2 /* SOStoreItem */ = {
+			isa = PBXGroup;
+			children = (
+				CC5175891A97B7E900056A3A /* SOCategoryViewController.h */,
+				CC51758A1A97B7E900056A3A /* SOCategoryViewController.m */,
+				CC51758C1A97B82700056A3A /* SOSubCategoryProductTableViewController.h */,
+				CC51758D1A97B82700056A3A /* SOSubCategoryProductTableViewController.m */,
+				CC51758F1A97B89E00056A3A /* SOProductTableViewController.h */,
+				CC5175901A97B89E00056A3A /* SOProductTableViewController.m */,
+				CC35ED781A993F36004D20C8 /* SODetailProductViewController.h */,
+				CC35ED791A993F36004D20C8 /* SODetailProductViewController.m */,
+			);
+			name = SOStoreItem;
+			sourceTree = "<group>";
+		};
+		CCEE4BEA1AA37AD000A107A2 /* SOBasketItem */ = {
+			isa = PBXGroup;
+			children = (
+				CC5175921A97BA1000056A3A /* SOBasketViewController.h */,
+				CC5175931A97BA1000056A3A /* SOBasketViewController.m */,
+				CC5175951A97BA4300056A3A /* SOCheckViewController.h */,
+				CC5175961A97BA4300056A3A /* SOCheckViewController.m */,
+			);
+			name = SOBasketItem;
+			sourceTree = "<group>";
+		};
+		CCEE4BEB1AA37ADD00A107A2 /* SOSettingItem */ = {
+			isa = PBXGroup;
+			children = (
+				CCEE4BE01AA3768700A107A2 /* SOSettingsTableViewController.h */,
+				CCEE4BE11AA3768700A107A2 /* SOSettingsTableViewController.m */,
+				CCEE4BE31AA37A7000A107A2 /* SOWebViewController.h */,
+				CCEE4BE41AA37A7000A107A2 /* SOWebViewController.m */,
+				CCEE4BE61AA37AA000A107A2 /* SOPopularProductTableViewController.h */,
+				CCEE4BE71AA37AA000A107A2 /* SOPopularProductTableViewController.m */,
+			);
+			name = SOSettingItem;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +393,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = CC5175221A97AE0D00056A3A;
 			productRefGroup = CC51752C1A97AE0D00056A3A /* Products */;
@@ -199,9 +411,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC51753A1A97AE0E00056A3A /* Main.storyboard in Resources */,
+				CC51753A1A97AE0E00056A3A /* SOShop.storyboard in Resources */,
+				CC35ED5A1A9898A5004D20C8 /* Localizable.strings in Resources */,
+				CC6029491AA4712B001A280E /* tesla.png in Resources */,
 				CC51753F1A97AE0E00056A3A /* LaunchScreen.xib in Resources */,
+				CCA14F551AC15EE40068C72B /* xmlFormatter.xml in Resources */,
+				CCB2844B1AA77A3D00125EEC /* document.json in Resources */,
 				CC51753C1A97AE0E00056A3A /* Images.xcassets in Resources */,
+				CC60294F1AA4757C001A280E /* Plakat.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,9 +436,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC5175371A97AE0E00056A3A /* ViewController.m in Sources */,
+				CCEE4BE21AA3768700A107A2 /* SOSettingsTableViewController.m in Sources */,
+				CC35ED741A98E1D0004D20C8 /* SOSubCategory.m in Sources */,
+				CC35ED6A1A98BE09004D20C8 /* SOProduct.m in Sources */,
+				CCEE4BE51AA37A7000A107A2 /* SOWebViewController.m in Sources */,
+				CC51758B1A97B7E900056A3A /* SOCategoryViewController.m in Sources */,
+				CC5175971A97BA4300056A3A /* SOCheckViewController.m in Sources */,
+				CCB6D41F1A99FD1B00892649 /* UIView+UITableView.m in Sources */,
 				CC5175341A97AE0D00056A3A /* AppDelegate.m in Sources */,
+				CCA14F531AC15E300068C72B /* XMLDictionary.m in Sources */,
+				CC35ED7E1A99C7DA004D20C8 /* SOProductTableViewCell.m in Sources */,
+				CC35ED7A1A993F36004D20C8 /* SODetailProductViewController.m in Sources */,
+				CCEE4BE81AA37AA000A107A2 /* SOPopularProductTableViewController.m in Sources */,
+				CCB284471AA6EBC700125EEC /* SOStore.xcdatamodeld in Sources */,
+				CC5175941A97BA1000056A3A /* SOBasketViewController.m in Sources */,
+				CCB6D4181A99F78B00892649 /* SOBasketManager.m in Sources */,
+				CC5175911A97B89E00056A3A /* SOProductTableViewController.m in Sources */,
 				CC5175311A97AE0D00056A3A /* main.m in Sources */,
+				CC51758E1A97B82700056A3A /* SOSubCategoryProductTableViewController.m in Sources */,
+				CC35ED711A98E1BD004D20C8 /* SOCategory.m in Sources */,
+				CC6061CB1ABF494D00644A83 /* SOBasketProductTableViewCell.m in Sources */,
+				CC5175881A97B78C00056A3A /* SOMainTabBarController.m in Sources */,
+				CC35ED6D1A98BE75004D20C8 /* SOStoreManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,12 +480,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CC5175381A97AE0E00056A3A /* Main.storyboard */ = {
+		CC35ED5C1A9898A5004D20C8 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC35ED5B1A9898A5004D20C8 /* en */,
+				CC35ED5D1A9898BA004D20C8 /* ru */,
+			);
+			name = Localizable.strings;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		CC5175381A97AE0E00056A3A /* SOShop.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				CC5175391A97AE0E00056A3A /* Base */,
 			);
-			name = Main.storyboard;
+			name = SOShop.storyboard;
 			sourceTree = "<group>";
 		};
 		CC51753D1A97AE0E00056A3A /* LaunchScreen.xib */ = {
@@ -412,6 +658,7 @@
 				CC5175501A97AE0E00056A3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CC5175511A97AE0E00056A3A /* Build configuration list for PBXNativeTarget "SOShopTests" */ = {
 			isa = XCConfigurationList;
@@ -420,8 +667,22 @@
 				CC5175531A97AE0E00056A3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CCB284451AA6EBC700125EEC /* SOStore.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CCB284461AA6EBC700125EEC /* SOStore.xcdatamodel */,
+			);
+			currentVersion = CCB284461AA6EBC700125EEC /* SOStore.xcdatamodel */;
+			path = SOStore.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CC5175231A97AE0D00056A3A /* Project object */;
 }

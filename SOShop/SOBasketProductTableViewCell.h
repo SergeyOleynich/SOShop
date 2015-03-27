@@ -10,4 +10,10 @@
 
 @interface SOBasketProductTableViewCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UILabel *productName;
+@property (weak, nonatomic) IBOutlet UILabel *amountLabel;
+@property (weak, nonatomic) IBOutlet UILabel *priceLabel;
+@property (weak, nonatomic) IBOutlet UILabel *currentAmountLabel;
+@property (weak, nonatomic) IBOutlet UILabel *currentPriceLabel;
+
 @end

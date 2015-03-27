@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "SOStoreManager.h"
+#import "SOProduct.h"
+#import "Constans.h"
+#import "SOCategory.h"
 
 @interface AppDelegate ()
 
@@ -14,9 +18,78 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+        
+    [[NSUserDefaults standardUserDefaults] setInteger:0 forKey:@"productId"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
+    dispatch_queue_t myQueue = dispatch_queue_create("Load data", NULL);
+    
+    dispatch_async(myQueue, ^{
+        
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"document" ofType:@"json"];
+        
+        NSData *responseData = [NSData dataWithContentsOfFile:path];
+        
+        NSDictionary* json = [NSJSONSerialization
+                              JSONObjectWithData:responseData
+                              options:kNilOptions
+                              error:nil];
+        
+        //SOParser *parser = [[SOParser alloc] init];
+        //[parser parseAllObjectToDataBase:json];
+        //NSLog(@"%@", parser.category);
+    });
+
+    
+    
+    /*
+    NSURL *bundleURL = [NSURL URLWithString:myDirectory];
+    NSArray *contents = [fileManager contentsOfDirectoryAtURL:bundleURL
+                                   includingPropertiesForKeys:@[]
+                                                      options:NSDirectoryEnumerationSkipsHiddenFiles
+                                                        error:nil];
+    
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"pathExtension == 'png'"];
+    for (NSURL *fileURL in [contents filteredArrayUsingPredicate:predicate]) {
+        NSLog(@"%@", fileURL.absoluteString);
+    }
+    */
+    
+    SOStoreManager *store = [SOStoreManager sharedManager];
+    
+    [store parseProductsFromJSON:[[NSBundle mainBundle] pathForResource:@"document" ofType:@"json"]];
+    [store parseProductsFromXML:[[NSBundle mainBundle] pathForResource:@"xmlFormatter" ofType:@"xml"]];
+    
+    SOProduct *apple = [[SOProduct alloc] initWithName:kApple cost:@25.55 barCode:@1 dimension:kKG];
+    SOProduct *cherry = [[SOProduct alloc] initWithName:kCherry cost:@20.0 barCode:@2 dimension:kKG];
+    SOProduct *banana = [[SOProduct alloc] initWithName:kBanana cost:@30.0f barCode:@3 dimension:kKG];
+    
+    [store addProduct:apple forProductSubCategory:kSubCategoryFruit withFailure:^(NSDictionary *error) {
+        NSLog(@"%@", error);
+    }];
+    
+    /*
+    [store addProduct:apple forProductSubCategory:kSubCategoryFruit withFailure:^(NSDictionary *error) {
+        NSLog(@"%@", error);
+    }];
+    */
+    
+    [store addProduct:cherry forProductSubCategory:kSubCategoryFruit withFailure:^(NSDictionary *error) {
+        NSLog(@"%@", error);
+    }];
+
+    [store addProduct:banana forProductSubCategory:kSubCategoryFruit withFailure:^(NSDictionary *error) {
+        NSLog(@"%@", error);
+    }];
+    
+    //NSLog(@"%@", [store getAllSubCategoryNamesByCategoryName:kCategoryFruitsVegetables]);
+    //NSLog(@"%@", [store getAllCategory]);
+    //NSLog(@"%@", [store getAllProductNamesByCategory:kCategoryFruitsVegetables]);
+    //NSLog(@"%@", [store getAllProductIdByCategory:kCategoryFruitsVegetables]);
+    //NSLog(@"%@", [store getAllProductsCost]);
+    
     return YES;
 }
 

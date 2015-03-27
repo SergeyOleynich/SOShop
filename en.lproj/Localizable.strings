@@ -5,3 +5,96 @@
   Created by Sergey on 21.02.15.
   Copyright (c) 2015 Sergey. All rights reserved.
 */
+
+"Close" = "Close";
+
+//UITabBar
+
+"MainTabShop" = "Shop";
+"MainTabBasket" = "Basket";
+"MainTabOptions" = "Options and settings";
+
+//UInavigationController
+
+"BackToShop" = "Back to shop";
+
+//SOWebViewController
+
+"Link" = "Web link";
+"File" = "Your file";
+"Loading" = "Loading...";
+
+//SOProductCell
+
+"SaleProductLabel" = "more than";
+"DeleteButton" = "Delete product\nfrom basket";
+"AddButton" = "Add product to basket";
+"AmountBuyButton" = "Choose the amount";
+
+//Category
+
+"CategoryallProductsCatalog" = " All products catalog";
+"CategoryFruitsVegetables" = "Fruits and Vegetables";
+"CategoryMeatFishBird" = "Meat, fish and bird";
+"CategoryConfectionery" = "Confectionery";
+"CategoryMilkCheeseEggs" = "Milk, cheese, eggs";
+"CategoryGrocery" = "Grocery";
+"CategoryDrinks" = "Drinks";
+"CategoryTobaccoProducts" = "Tobacco Products";
+
+//SubCategory
+
+"SubCategoryFruit" = "Fruits";
+"SubCategoryVegetables" = "Vegetables";
+"SubCategoryMushrooms" = "Mushrooms";
+"SubCategoryNuts" = "Nuts";
+"SubCategorySalad" = "Salad";
+"SubCategoryDriedFruts" = "Dried fruits";
+
+"SubCategoryBeef" = "Beef";
+"SubCategoryPork" = "Pork";
+"SubCategoryLamb" = "Lamb";
+"SubCategoryShrimp" = "Shrimp";
+"SubCategoryFish" = "Fish";
+"SubCategoryChicken" = "Chicken";
+
+"SubCategoryCandy" = "Candy";
+"SubCategoryChocolate" = "Chocolate";
+"SubCategoryCookies" = "Cookies";
+"SubCategoryCakes" = "Cakes";
+"SubCategoryCud" = "Cud";
+
+"SubCategoryMilk" = "Milk";
+"SubCategoryCheese" = "Cheese";
+"SubCategoryEggs" = "Eggs";
+
+"SubCategoryCereals" = "Cereals";
+"SubCategoryFlour" = "Flour";
+"SubCategoryPasta" = "Pasta";
+
+"SubCategoryWater" = "Water";
+"SubCategoryJuice" = "Juice";
+"SubCategoryStrongDrinks" = "Strong drinks";
+"SubCategoryLowAlcholDrinks" = "Low alchol drinks";
+"SubCategoryWine" = "Wine";
+
+"SubCategoryCigarettes" = "Cigarettes";
+"SubCategoryCigars" = "Cigars";
+
+//Dimension
+
+"kg" = "kg";
+"one" = "one";
+"liter" = "liter";
+
+//Products
+
+"Apple" = "Apple";
+"Cherry" = "Cherry";
+"Banana" = "Banana";
+
+
+
+
+
+

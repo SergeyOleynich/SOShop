@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SOBasketViewController : UIViewController
+@interface SOBasketViewController : UITableViewController
 
 @end
