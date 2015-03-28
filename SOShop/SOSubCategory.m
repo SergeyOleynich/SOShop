@@ -14,7 +14,7 @@
 
 @implementation SOSubCategory
 
-- (instancetype)initWithCategoryName:(NSDictionary *)dictionary {
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary {
     
     self = [super init];
     
@@ -22,8 +22,8 @@
         _subCategoryName = [dictionary objectForKey:@"SubCategoryName"];
         NSArray *temp = [dictionary objectForKey:@"data"];
         _products = [[NSMutableArray alloc] init];
-        for (int i = 0; i < [temp count]; i++) {
-            SOProduct *product = [[SOProduct alloc] initWithDictionary:[temp objectAtIndex:i]];
+        for (NSDictionary *currentDictionary in temp) {
+            SOProduct *product = [[SOProduct alloc] initWithDictionary:currentDictionary];
             [self.products addObject:product];
         }
     }
@@ -37,11 +37,6 @@
     SOSubCategory *subCategory = [[[self class] allocWithZone:zone] init];
     subCategory -> _subCategoryName = [_subCategoryName copyWithZone:zone];
     subCategory -> _products = [[NSMutableArray alloc] initWithArray:_products copyItems:YES];
-    /*
-    subCategory -> _products = [[NSMutableArray alloc] init];//[_products copyWithZone:zone];
-    for (SOProduct *temp in self.products) {
-        [subCategory -> _products addObject:[temp copyWithZone:zone]];
-    }*/
     return subCategory;
 }
 

@@ -86,7 +86,7 @@
     
     NSArray *categoryNames = [dictionary objectForKey:@"category"];
     for (int i = 0; i < [categoryNames count]; i++) {
-        SOCategory *category = [[SOCategory alloc] initWithCategoryName:[categoryNames objectAtIndex:i]];
+        SOCategory *category = [[SOCategory alloc] initWithDictionary:[categoryNames objectAtIndex:i]];
         [self.store addObject:category];
     }
     //[self writeMySerializedObjectsToFilePath:@"/SerializedData"];
@@ -105,21 +105,19 @@
     } else if ([xml isKindOfClass:[NSString class]]) {
         
         NSString *temp = [xml lastPathComponent];
-        NSDictionary *dict = [NSDictionary dictionaryWithXMLData:[NSData dataWithContentsOfFile:xml]];
-        NSLog(@"%@", dict);
-        //NSData *data = [NSData dataWithContentsOfFile:[self searchForFile:temp inDirectory:@"SergeyDoc/XML"]];
-        //dictionary = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
-        
+        NSData *data = [NSData dataWithContentsOfFile:[self searchForFile:temp inDirectory:@"SergeyDoc/XML"]];
+        dictionary = [NSDictionary dictionaryWithXMLData:data];
+        NSLog(@"%@", NSStringFromClass([[dictionary objectForKey:@"category"] class]));
     } else {
         NSLog(@"Unrecognizer parametr send for parse");
         return ;
     }
-    /*
+    
     NSArray *categoryNames = [dictionary objectForKey:@"category"];
     for (int i = 0; i < [categoryNames count]; i++) {
-        SOCategory *category = [[SOCategory alloc] initWithCategoryName:[categoryNames objectAtIndex:i]];
+        SOCategory *category = [[SOCategory alloc] initWithDictionary:[categoryNames objectAtIndex:i]];
         [self.store addObject:category];
-    }*/
+    }
 }
 
 #pragma mark - manually
@@ -345,12 +343,6 @@
     filePath = [temp stringByAppendingPathComponent:filePath];
     NSData *data = [NSKeyedArchiver archivedDataWithRootObject:self.store];
     [data writeToFile:filePath atomically:YES];
-    //я сделал так но я видел и другую реализацию
-//    NSMutableData *dataa = [[NSMutableData alloc] init];
-//    NSKeyedArchiver *archiv = [[NSKeyedArchiver alloc] initForWritingWithMutableData:dataa];
-//    [archiv encodeObject:obj forKey:@"sdf"];
-//    [archiv finishEncoding];
-//    [dataa writeToFile:<#(NSString *)#> atomically:<#(BOOL)#>]
 }
 
 @end

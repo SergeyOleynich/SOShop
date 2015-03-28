@@ -59,9 +59,11 @@
     
     SOStoreManager *store = [SOStoreManager sharedManager];
     
+#ifdef JSON
     [store parseProductsFromJSON:[[NSBundle mainBundle] pathForResource:@"document" ofType:@"json"]];
+#elif XML
     [store parseProductsFromXML:[[NSBundle mainBundle] pathForResource:@"xmlFormatter" ofType:@"xml"]];
-    
+#elif MANUAL
     SOProduct *apple = [[SOProduct alloc] initWithName:kApple cost:@25.55 barCode:@1 dimension:kKG];
     SOProduct *cherry = [[SOProduct alloc] initWithName:kCherry cost:@20.0 barCode:@2 dimension:kKG];
     SOProduct *banana = [[SOProduct alloc] initWithName:kBanana cost:@30.0f barCode:@3 dimension:kKG];
@@ -71,18 +73,19 @@
     }];
     
     /*
-    [store addProduct:apple forProductSubCategory:kSubCategoryFruit withFailure:^(NSDictionary *error) {
-        NSLog(@"%@", error);
-    }];
-    */
+     [store addProduct:apple forProductSubCategory:kSubCategoryFruit withFailure:^(NSDictionary *error) {
+     NSLog(@"%@", error);
+     }];
+     */
     
     [store addProduct:cherry forProductSubCategory:kSubCategoryFruit withFailure:^(NSDictionary *error) {
         NSLog(@"%@", error);
     }];
-
+    
     [store addProduct:banana forProductSubCategory:kSubCategoryFruit withFailure:^(NSDictionary *error) {
         NSLog(@"%@", error);
     }];
+#endif
     
     //NSLog(@"%@", [store getAllSubCategoryNamesByCategoryName:kCategoryFruitsVegetables]);
     //NSLog(@"%@", [store getAllCategory]);

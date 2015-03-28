@@ -110,37 +110,54 @@
     }
     SOCategory *category = [self.allCategory objectAtIndex:indexPath.section];
     cell.textLabel.text = category.categoryName;
-    cell.imageView.image = nil;
-    __weak UITableViewCell *weakCell = cell;
     
-    NSString *key = [category.urlToImage relativePath];
+    cell.imageView.image = nil;
+    
+    //__weak UITableViewCell *weakCell = cell;
+    NSString *key = @"/PicturesForCategory";
+    key = [key stringByAppendingString:[[category.urlToImage URLByDeletingPathExtension] relativePath]];
     
     NSString *fullPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
-    fullPath = [fullPath stringByAppendingString:key];
+    fullPath = [fullPath stringByAppendingPathComponent:key];
     
-    if ([self.manager fileExistsAtPath:fullPath]) {
-        cell.imageView.image = [UIImage imageWithData:[NSData dataWithContentsOfFile:fullPath]];
+    if ([self.manager fileExistsAtPath:[fullPath stringByAppendingPathComponent:[category.urlToImage lastPathComponent]]]) {
+        cell.imageView.image = [UIImage imageWithData:[NSData dataWithContentsOfFile:[fullPath stringByAppendingPathComponent:[category.urlToImage lastPathComponent]]]];
         [cell layoutSubviews];
     } else {
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+            BOOL isDirectory;
+            NSError *error;
+            [[NSFileManager defaultManager] fileExistsAtPath:fullPath isDirectory:&isDirectory];
+            if (!isDirectory) {
+                if (![[NSFileManager defaultManager] createDirectoryAtPath:fullPath withIntermediateDirectories:YES attributes:nil error:&error]) {
+                    NSLog(@"ERROR create the directory in Category view controller: %@", error.localizedDescription);
+                }
+            }
             NSData *tempData = [NSData dataWithContentsOfURL:category.urlToImage];
-            [tempData writeToFile:fullPath atomically:YES];
+            if (![[NSFileManager defaultManager] createFileAtPath:[fullPath stringByAppendingPathComponent:[category.urlToImage lastPathComponent]] contents:tempData attributes:nil]) {
+                NSLog(@"ERROR create file: %@ - %@", error.localizedDescription, [category.urlToImage lastPathComponent]);
+            }
+            //[tempData writeToFile:fullPath atomically:YES];
             dispatch_async(dispatch_get_main_queue(), ^{
+                
+                NSArray *visibleCells = [tableView visibleCells];
+                
+                [visibleCells enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+                    UITableViewCell *currentCell = obj;
+                    if ([tableView indexPathForCell:currentCell].row == indexPath.row) {
+                        cell.imageView.image = [UIImage imageWithData:tempData];
+                        [cell layoutSubviews];
+                        *stop = YES;
+                    }
+                }];
+                /*
                 weakCell.imageView.image = [UIImage imageWithData:tempData];
                 [weakCell setNeedsLayout];
+                 */
             });
         });
     }
     
-    /*
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
-        NSData *tempData = [NSData dataWithContentsOfURL:category.urlToImage];
-        dispatch_async(dispatch_get_main_queue(), ^{
-            weakCell.imageView.image = [UIImage imageWithData:tempData];
-            [weakCell setNeedsLayout];
-        });
-    });
-     */
     return cell;
     
 }

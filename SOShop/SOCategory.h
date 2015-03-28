@@ -18,6 +18,7 @@
 @property (strong, nonatomic) NSURL *urlToImage;
 //@property (strong, nonatomic) NSMutableArray *subCategoty;
 
-- (instancetype)initWithCategoryName:(NSDictionary *)dictionary;
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary;
+//- (instancetype)initWithCategoryName:(NSDictionary *)dictionary;
 
 @end

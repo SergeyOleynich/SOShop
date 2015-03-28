@@ -13,6 +13,7 @@
 @property (strong, nonatomic) NSString *subCategoryName;
 @property (strong, nonatomic) NSMutableArray *products;
 
-- (instancetype)initWithCategoryName:(NSDictionary *)dictionary;
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary;
+//- (instancetype)initWithCategoryName:(NSDictionary *)dictionary;
 
 @end

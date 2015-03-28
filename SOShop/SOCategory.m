@@ -22,7 +22,7 @@
 
 @implementation SOCategory
 
-- (instancetype)initWithCategoryName:(NSDictionary *)dictionary {
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary {
     
     self = [super init];
     
@@ -31,8 +31,8 @@
         _urlToImage = [NSURL URLWithString:[dictionary objectForKey:@"image"]];
         NSArray *temp = [dictionary objectForKey:@"data"];
         _subCategories = [[NSMutableArray alloc] init];
-        for (int i = 0; i < [temp count]; i++) {
-            SOSubCategory *subCategory = [[SOSubCategory alloc] initWithCategoryName:[temp objectAtIndex:i]];
+        for (NSDictionary *currentDictionary in temp) {
+            SOSubCategory *subCategory = [[SOSubCategory alloc] initWithDictionary:currentDictionary];
             [self.subCategories addObject:subCategory];
         }
         //[self createCategory];
@@ -49,12 +49,6 @@
     category -> _categoryName = [_categoryName copyWithZone:zone];
     category -> _urlToImage = [_urlToImage copyWithZone:zone];
     category -> _subCategories = [[NSMutableArray alloc] initWithArray:_subCategories copyItems:YES];
-    /*
-    category -> _subCategories = [[NSMutableArray alloc] init];//[_subCategories copyWithZone:zone];
-    for (SOSubCategory *temp in self.subCategories) {
-        [category -> _subCategories addObject:[temp copyWithZone:zone]];
-    }*/
-    //category -> _subCategories = [_subCategories copyWithZone:zone];
     return category;
 }
 

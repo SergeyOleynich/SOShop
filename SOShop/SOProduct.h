@@ -23,7 +23,7 @@
 @property (strong, nonatomic) NSString *descriptionEng;
 @property (strong, nonatomic) NSURL *urlToImage;
 
--(instancetype)initWithName:(NSString *)name cost:(NSNumber *)cost barCode:(NSNumber *)productBarCode dimension:(NSString *)dimension;
+- (instancetype)initWithName:(NSString *)name cost:(NSNumber *)cost barCode:(NSNumber *)productBarCode dimension:(NSString *)dimension;
 
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary;
 
