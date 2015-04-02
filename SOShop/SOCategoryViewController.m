@@ -191,7 +191,7 @@
     
     if ([self.manager fileExistsAtPath:[fullPath stringByAppendingPathComponent:[category.urlToImage lastPathComponent]]]) {
         cell.imageView.image = [UIImage imageWithData:[NSData dataWithContentsOfFile:[fullPath stringByAppendingPathComponent:[category.urlToImage lastPathComponent]]]];
-        [cell layoutIfNeeded];
+        [cell setNeedsDisplay];
     } else {
         if ([self isConnectedTOInternet]) {
             if (![self.downloadIndexPaths containsObject:indexPath]) {
@@ -219,7 +219,7 @@
                             UITableViewCell *currentCell = obj;
                             if ([tableView indexPathForCell:currentCell].row == currentIndexPath.row) {
                                 cell.imageView.image = [UIImage imageWithData:tempData];
-                                [cell layoutIfNeeded];
+                                [cell setNeedsDisplay];
                                 *stop = YES;
                             }
                         }];

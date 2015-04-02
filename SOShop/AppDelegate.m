@@ -93,7 +93,40 @@
     //NSLog(@"%@", [store getAllProductIdByCategory:kCategoryFruitsVegetables]);
     //NSLog(@"%@", [store getAllProductsCost]);
     
+    NSMutableArray *array = [NSMutableArray arrayWithObjects:@1, @2, nil];
+    NSLog(@"1 - %p", array);
+    NSLog(@"%@", array);
+    /*
+    [self changeArray:array];
+    NSLog(@"3 - %p", array);
+    NSLog(@"%@", array);
+    */
+    void(^block)(int);
+    int fff = 2;
+    block = ^(int vb){
+        NSLog(@"2 - %p", array);
+        //array = [NSMutableArray arrayWithObjects:@4, @2, nil];
+        NSLog(@"2.1 - %p", array);
+        [array removeLastObject];
+        [array addObject:@3];
+        NSLog(@"BLOCK");
+        vb = 4;
+    };
+    
+    NSLog(@"BEFORE BLOCK");
+    block (fff);
+    NSLog(@"AFTER BLOCK");
+    NSLog(@"3 - %p", array);
+    NSLog(@"%@", array);
     return YES;
+}
+
+- (void)changeArray:(NSMutableArray *)array {
+    NSLog(@"2 - %p", array);
+    //array = [NSMutableArray arrayWithObjects:@4, @2, nil];
+    NSLog(@"2.1 - %p", array);
+    [array removeLastObject];
+    [array addObject:@3];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
