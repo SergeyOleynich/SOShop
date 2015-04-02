@@ -73,6 +73,39 @@
 		CC02438C1AC7194F0093CEDC /* document.json in Resources */ = {isa = PBXBuildFile; fileRef = CCB2844A1AA77A3D00125EEC /* document.json */; };
 		CC02438D1AC7194F0093CEDC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC51753B1A97AE0E00056A3A /* Images.xcassets */; };
 		CC02438E1AC7194F0093CEDC /* Plakat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CC60294D1AA4757C001A280E /* Plakat.jpg */; };
+		CC344BAF1ACC522C00D9985D /* SOSettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCEE4BE11AA3768700A107A2 /* SOSettingsTableViewController.m */; };
+		CC344BB01ACC522C00D9985D /* SOSubCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CC35ED731A98E1D0004D20C8 /* SOSubCategory.m */; };
+		CC344BB11ACC522C00D9985D /* SOProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = CC35ED691A98BE09004D20C8 /* SOProduct.m */; };
+		CC344BB21ACC522C00D9985D /* SOWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCEE4BE41AA37A7000A107A2 /* SOWebViewController.m */; };
+		CC344BB31ACC522C00D9985D /* SOCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC51758A1A97B7E900056A3A /* SOCategoryViewController.m */; };
+		CC344BB41ACC522C00D9985D /* SOCheckViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5175961A97BA4300056A3A /* SOCheckViewController.m */; };
+		CC344BB51ACC522C00D9985D /* UIView+UITableView.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB6D41E1A99FD1B00892649 /* UIView+UITableView.m */; };
+		CC344BB61ACC522C00D9985D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5175331A97AE0D00056A3A /* AppDelegate.m */; };
+		CC344BB71ACC522C00D9985D /* XMLDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA14F521AC15E300068C72B /* XMLDictionary.m */; };
+		CC344BB81ACC522C00D9985D /* SOProductTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CC35ED7D1A99C7DA004D20C8 /* SOProductTableViewCell.m */; };
+		CC344BB91ACC522C00D9985D /* SODetailProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC35ED791A993F36004D20C8 /* SODetailProductViewController.m */; };
+		CC344BBA1ACC522C00D9985D /* SOPopularProductTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCEE4BE71AA37AA000A107A2 /* SOPopularProductTableViewController.m */; };
+		CC344BBB1ACC522C00D9985D /* SOStore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CCB284451AA6EBC700125EEC /* SOStore.xcdatamodeld */; };
+		CC344BBC1ACC522C00D9985D /* SOBasketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5175931A97BA1000056A3A /* SOBasketViewController.m */; };
+		CC344BBD1ACC522C00D9985D /* SOBasketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB6D4171A99F78B00892649 /* SOBasketManager.m */; };
+		CC344BBE1ACC522C00D9985D /* SOProductTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5175901A97B89E00056A3A /* SOProductTableViewController.m */; };
+		CC344BBF1ACC522C00D9985D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5175301A97AE0D00056A3A /* main.m */; };
+		CC344BC01ACC522C00D9985D /* SOSubCategoryProductTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC51758D1A97B82700056A3A /* SOSubCategoryProductTableViewController.m */; };
+		CC344BC11ACC522C00D9985D /* SOCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CC35ED701A98E1BD004D20C8 /* SOCategory.m */; };
+		CC344BC21ACC522C00D9985D /* SOBasketProductTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6061CA1ABF494D00644A83 /* SOBasketProductTableViewCell.m */; };
+		CC344BC31ACC522C00D9985D /* SOMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5175871A97B78C00056A3A /* SOMainTabBarController.m */; };
+		CC344BC41ACC522C00D9985D /* SOStoreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC35ED6C1A98BE75004D20C8 /* SOStoreManager.m */; };
+		CC344BC61ACC522C00D9985D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCB6D4251A9A26DC00892649 /* QuartzCore.framework */; };
+		CC344BC71ACC522C00D9985D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC35ED611A989C84004D20C8 /* UIKit.framework */; };
+		CC344BC81ACC522C00D9985D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC35ED5F1A989C7D004D20C8 /* Foundation.framework */; };
+		CC344BCA1ACC522C00D9985D /* SOShop.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC5175381A97AE0E00056A3A /* SOShop.storyboard */; };
+		CC344BCB1ACC522C00D9985D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CC35ED5C1A9898A5004D20C8 /* Localizable.strings */; };
+		CC344BCC1ACC522C00D9985D /* tesla.png in Resources */ = {isa = PBXBuildFile; fileRef = CC6029461AA4712B001A280E /* tesla.png */; };
+		CC344BCD1ACC522C00D9985D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC51753D1A97AE0E00056A3A /* LaunchScreen.xib */; };
+		CC344BCE1ACC522C00D9985D /* xmlFormatter.xml in Resources */ = {isa = PBXBuildFile; fileRef = CCA14F541AC15EE40068C72B /* xmlFormatter.xml */; };
+		CC344BCF1ACC522C00D9985D /* document.json in Resources */ = {isa = PBXBuildFile; fileRef = CCB2844A1AA77A3D00125EEC /* document.json */; };
+		CC344BD01ACC522C00D9985D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC51753B1A97AE0E00056A3A /* Images.xcassets */; };
+		CC344BD11ACC522C00D9985D /* Plakat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CC60294D1AA4757C001A280E /* Plakat.jpg */; };
 		CC35ED5A1A9898A5004D20C8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CC35ED5C1A9898A5004D20C8 /* Localizable.strings */; };
 		CC35ED601A989C7D004D20C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC35ED5F1A989C7D004D20C8 /* Foundation.framework */; };
 		CC35ED621A989C84004D20C8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC35ED611A989C84004D20C8 /* UIKit.framework */; };
@@ -124,6 +157,8 @@
 		CC0243691AC719390093CEDC /* SOShop copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SOShop copy-Info.plist"; path = "/Users/for_sale/Desktop/Practise/SOShop/SOShop copy-Info.plist"; sourceTree = "<absolute>"; };
 		CC0243921AC7194F0093CEDC /* SOShop XML copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SOShop XML copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC0243931AC719500093CEDC /* SOShop XML copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SOShop XML copy-Info.plist"; path = "/Users/for_sale/Desktop/Practise/SOShop/SOShop XML copy-Info.plist"; sourceTree = "<absolute>"; };
+		CC344BD51ACC522C00D9985D /* SOShop JSON copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SOShop JSON copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC344BD61ACC522C00D9985D /* SOShop JSON copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SOShop JSON copy-Info.plist"; path = "/Users/for_sale/Desktop/Practise/SOShop/SOShop JSON copy-Info.plist"; sourceTree = "<absolute>"; };
 		CC35ED5B1A9898A5004D20C8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CC35ED5D1A9898BA004D20C8 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CC35ED5E1A989C44004D20C8 /* Constans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constans.h; sourceTree = "<group>"; };
@@ -207,6 +242,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CC344BC51ACC522C00D9985D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC344BC61ACC522C00D9985D /* QuartzCore.framework in Frameworks */,
+				CC344BC71ACC522C00D9985D /* UIKit.framework in Frameworks */,
+				CC344BC81ACC522C00D9985D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CC5175281A97AE0D00056A3A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -271,6 +316,7 @@
 				CC51752C1A97AE0D00056A3A /* Products */,
 				CC0243691AC719390093CEDC /* SOShop copy-Info.plist */,
 				CC0243931AC719500093CEDC /* SOShop XML copy-Info.plist */,
+				CC344BD61ACC522C00D9985D /* SOShop JSON copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -281,6 +327,7 @@
 				CC5175441A97AE0E00056A3A /* SOShopTests.xctest */,
 				CC0243681AC719390093CEDC /* SOShop copy.app */,
 				CC0243921AC7194F0093CEDC /* SOShop XML copy.app */,
+				CC344BD51ACC522C00D9985D /* SOShop JSON copy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -461,6 +508,23 @@
 			productReference = CC0243921AC7194F0093CEDC /* SOShop XML copy.app */;
 			productType = "com.apple.product-type.application";
 		};
+		CC344BAD1ACC522B00D9985D /* SOShop NSURL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC344BD21ACC522C00D9985D /* Build configuration list for PBXNativeTarget "SOShop NSURL" */;
+			buildPhases = (
+				CC344BAE1ACC522C00D9985D /* Sources */,
+				CC344BC51ACC522C00D9985D /* Frameworks */,
+				CC344BC91ACC522C00D9985D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SOShop NSURL";
+			productName = SOShop;
+			productReference = CC344BD51ACC522C00D9985D /* SOShop JSON copy.app */;
+			productType = "com.apple.product-type.application";
+		};
 		CC51752A1A97AE0D00056A3A /* SOShop JSON */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CC51754E1A97AE0E00056A3A /* Build configuration list for PBXNativeTarget "SOShop JSON" */;
@@ -531,6 +595,7 @@
 				CC51752A1A97AE0D00056A3A /* SOShop JSON */,
 				CC0243401AC719390093CEDC /* SOShop XML */,
 				CC02436A1AC7194F0093CEDC /* SOShop MANUAL */,
+				CC344BAD1ACC522B00D9985D /* SOShop NSURL */,
 				CC5175431A97AE0E00056A3A /* SOShopTests */,
 			);
 		};
@@ -564,6 +629,21 @@
 				CC02438C1AC7194F0093CEDC /* document.json in Resources */,
 				CC02438D1AC7194F0093CEDC /* Images.xcassets in Resources */,
 				CC02438E1AC7194F0093CEDC /* Plakat.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC344BC91ACC522C00D9985D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC344BCA1ACC522C00D9985D /* SOShop.storyboard in Resources */,
+				CC344BCB1ACC522C00D9985D /* Localizable.strings in Resources */,
+				CC344BCC1ACC522C00D9985D /* tesla.png in Resources */,
+				CC344BCD1ACC522C00D9985D /* LaunchScreen.xib in Resources */,
+				CC344BCE1ACC522C00D9985D /* xmlFormatter.xml in Resources */,
+				CC344BCF1ACC522C00D9985D /* document.json in Resources */,
+				CC344BD01ACC522C00D9985D /* Images.xcassets in Resources */,
+				CC344BD11ACC522C00D9985D /* Plakat.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -647,6 +727,35 @@
 				CC02437F1AC7194F0093CEDC /* SOBasketProductTableViewCell.m in Sources */,
 				CC0243801AC7194F0093CEDC /* SOMainTabBarController.m in Sources */,
 				CC0243811AC7194F0093CEDC /* SOStoreManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC344BAE1ACC522C00D9985D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC344BAF1ACC522C00D9985D /* SOSettingsTableViewController.m in Sources */,
+				CC344BB01ACC522C00D9985D /* SOSubCategory.m in Sources */,
+				CC344BB11ACC522C00D9985D /* SOProduct.m in Sources */,
+				CC344BB21ACC522C00D9985D /* SOWebViewController.m in Sources */,
+				CC344BB31ACC522C00D9985D /* SOCategoryViewController.m in Sources */,
+				CC344BB41ACC522C00D9985D /* SOCheckViewController.m in Sources */,
+				CC344BB51ACC522C00D9985D /* UIView+UITableView.m in Sources */,
+				CC344BB61ACC522C00D9985D /* AppDelegate.m in Sources */,
+				CC344BB71ACC522C00D9985D /* XMLDictionary.m in Sources */,
+				CC344BB81ACC522C00D9985D /* SOProductTableViewCell.m in Sources */,
+				CC344BB91ACC522C00D9985D /* SODetailProductViewController.m in Sources */,
+				CC344BBA1ACC522C00D9985D /* SOPopularProductTableViewController.m in Sources */,
+				CC344BBB1ACC522C00D9985D /* SOStore.xcdatamodeld in Sources */,
+				CC344BBC1ACC522C00D9985D /* SOBasketViewController.m in Sources */,
+				CC344BBD1ACC522C00D9985D /* SOBasketManager.m in Sources */,
+				CC344BBE1ACC522C00D9985D /* SOProductTableViewController.m in Sources */,
+				CC344BBF1ACC522C00D9985D /* main.m in Sources */,
+				CC344BC01ACC522C00D9985D /* SOSubCategoryProductTableViewController.m in Sources */,
+				CC344BC11ACC522C00D9985D /* SOCategory.m in Sources */,
+				CC344BC21ACC522C00D9985D /* SOBasketProductTableViewCell.m in Sources */,
+				CC344BC31ACC522C00D9985D /* SOMainTabBarController.m in Sources */,
+				CC344BC41ACC522C00D9985D /* SOStoreManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -777,6 +886,33 @@
 				INFOPLIST_FILE = "SOShop XML copy-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "SOShop XML copy";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CC344BD31ACC522C00D9985D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					PARSEDownloading,
+				);
+				INFOPLIST_FILE = "SOShop JSON copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "SOShop JSON copy";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CC344BD41ACC522C00D9985D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "SOShop JSON copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "SOShop JSON copy";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -935,6 +1071,15 @@
 			buildConfigurations = (
 				CC0243901AC7194F0093CEDC /* Debug */,
 				CC0243911AC7194F0093CEDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC344BD21ACC522C00D9985D /* Build configuration list for PBXNativeTarget "SOShop NSURL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC344BD31ACC522C00D9985D /* Debug */,
+				CC344BD41ACC522C00D9985D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

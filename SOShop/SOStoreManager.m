@@ -83,12 +83,19 @@
         NSLog(@"Unrecognizer parametr send for parse");
         return ;
     }
-    
+#ifdef PARSEDownloading
+    NSArray *categoryNames = [dictionary objectForKey:@"results"];
+    for (int i = 0; i < [categoryNames count]; i++) {
+        SOCategory *category = [[SOCategory alloc] initWithDictionary:[categoryNames objectAtIndex:i]];
+        [self.store addObject:category];
+    }
+#else
     NSArray *categoryNames = [dictionary objectForKey:@"category"];
     for (int i = 0; i < [categoryNames count]; i++) {
         SOCategory *category = [[SOCategory alloc] initWithDictionary:[categoryNames objectAtIndex:i]];
         [self.store addObject:category];
     }
+#endif
     //[self writeMySerializedObjectsToFilePath:@"/SerializedData"];
     //[self printAll];
 }

@@ -86,7 +86,7 @@
         NSLog(@"%@", error);
     }];
 #endif
-    
+
     //NSLog(@"%@", [store getAllSubCategoryNamesByCategoryName:kCategoryFruitsVegetables]);
     //NSLog(@"%@", [store getAllCategory]);
     //NSLog(@"%@", [store getAllProductNamesByCategory:kCategoryFruitsVegetables]);

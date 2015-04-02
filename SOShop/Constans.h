@@ -9,6 +9,13 @@
 #ifndef SOShop_Constans_h
 #define SOShop_Constans_h
 
+//Parse
+
+static NSString *const kParseRESTKey = @"X-Parse-REST-API-Key";
+static NSString *const kParseRESTValue = @"rYtae3c6LtPkTYCxnmqsY0Us0qCLs9CIAlODhMce";
+static NSString *const kParseApplicationKey = @"X-Parse-Application-Id";
+static NSString *const kParseApplicationValue = @"jtsMRv5wq3SsueaDHfLNUKfwZ0mV6h6xcigJ5Atf";
+
 //Category
 
 static NSString *const kCategoryAllProductsCatalog = @"CategoryallProductsCatalog";
